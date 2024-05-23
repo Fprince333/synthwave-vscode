@@ -192,7 +192,7 @@
   color: #bbbbbb;
 }
 
-.notification-toast:has(.notifications-list-container):has(.monaco-list-row:is([aria-label^="Your Code - Insiders installation appears to be corrupt"])) {
+.notification-toast:has(.notifications-list-container):has(div[class*="monaco-list"]:is([aria-label*="Your Code - Insiders installation"])) {
   display: none;
   transition: display 2s;
 }
